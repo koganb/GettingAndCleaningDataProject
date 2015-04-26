@@ -12,6 +12,7 @@
 
 ## Result data 
 Column names are in pattern {activity}.{subject}
+
 Row values are means of the following values:
 * tBodyAcc-mean()-X
 * tBodyAcc-mean()-Y
