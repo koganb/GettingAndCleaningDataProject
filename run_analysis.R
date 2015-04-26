@@ -59,8 +59,8 @@ calcMeanForMeanStdCols = function(dataFrame) {
     ##project columns
     meanStdDataFrame <- dataFrame[, coln]
     
-    ## group data frame by activity
-    dfs <- split(meanStdDataFrame, f=meanStdDataFrame[, "label"])
+    ## group data frame by activity and subject
+    dfs <- split(meanStdDataFrame, list(meanStdDataFrame$label,meanStdDataFrame$subject))
     
     ##calculate mean for all columns in group
     res <- data.frame(sapply(dfs, function(x) {x$label<-NULL;x$subject<-NULL; colMeans(x)}))    
