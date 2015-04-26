@@ -79,7 +79,7 @@ Row values are means of the following values:
 * fBodyBodyGyroMag-std()
 * fBodyBodyGyroJerkMag-mean()
 * fBodyBodyGyroJerkMag-std()
-* 
+
 
 
 
